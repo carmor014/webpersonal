@@ -2,10 +2,24 @@
 
 {% block title %}Acerca de{% endblock %}
 
+{% block background%}{% load static %}{% static 'core/img/genovas.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
 {% block content %}
 
-<h2>Acerca de</h2>
-
-<p>Me llamo Carlos y soy programador.</p>
+<div class="row">  
+<div class="col-lg-3 col-md-4 offset-lg-1">
+    <img class="img-fluid avatar" src="{% static 'core/img/papa.jpg' %}" alt="">
+</div>
+<div class="col-lg-7 col-md-8">
+    <h2 class="section-heading">Carlos J Mora</h2>   
+    <p>Nacido en Charala Santander en el año de 1952, ha sido un profesional intachable en toda su vida teniendo con el uno de los mayores secretos Santandereanos</p>
+    <p>Las mas deliciosas recetas tipicas de los muy famosos chorizos y Genovas de su region..</p>
+</div>
+</div>
 
 {% endblock %}

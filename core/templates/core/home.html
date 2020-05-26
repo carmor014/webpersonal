@@ -2,10 +2,10 @@
 
 {% block title %}Home{% endblock %}
 
-{% block content %}
+{% block background%}{% load static %}{% static 'core/img/Chorizos2.jpg' %}{% endblock %}
 
-<h2>Portada</h2>"
-
-<p>Esto es la portada</p>
-
+{% block headers %}
+<h1>Chorizos Charala</h1>
+<span class="subheading">Darse un gusto no tiene precio</span>
 {% endblock %}
+

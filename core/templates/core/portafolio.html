@@ -2,10 +2,35 @@
 
 {% block title %}Portafolio{% endblock %}
 
+{% block background%}{% load static %}{% static 'core/img/Chorizos3.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Portafolio</h1>
+<span class="subheading">Currículo</span>
+{% endblock %}
+
 {% block content %}
-
-<h2>Portafolio</h2>
-
-<p>Seccion de mostrario.</p>
+ <!-- Proyecto -->
+	      <div class="row project">  	
+	      	<div class="col-lg-3 col-md-4 offset-lg-1">
+			      <img class="img-fluid" src="{% static 'core/img/bandeja.jpg' %}" alt="">
+	      	</div>
+	        <div class="col-lg-7 col-md-8">
+	      		<h2 class="section-heading title">Chorizos</h2>   
+	          <p>Chrorizos con la receta tipica y tradicional de los ancestros Santandereanos </p>
+	          <p><a href="http://google.com">Más información</a></p>
+	      	</div>
+	      </div>
+	      <!-- Proyecto -->
+	      <div class="row project">  	
+	      	<div class="col-lg-3 col-md-4 offset-lg-1">
+			      <img class="img-fluid" src="{% static 'core/img/genovas.jpg' %}" alt="">
+	      	</div>
+	        <div class="col-lg-7 col-md-8">
+	      		<h2 class="section-heading title">Genovas</h2>   
+	          <p>Genovas Tipicas Santandereanas charleñas, con su magnifico toque secreto que envuelve la carne en u sabor sin igual</p>
+	          <p><a href="http://google.com">Más información</a></p>
+	      	</div>
+	      </div>
 
 {% endblock %}

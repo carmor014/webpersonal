@@ -2,10 +2,21 @@
 
 {% block title %}Contacto{% endblock %}
 
+{% block background%}{% load static %}{% static 'core/img/contactanos.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Contacto</h1>
+<span class="subheading">Asesoría</span>
+{% endblock %}
+
 {% block content %}
-
-<h2>Contacto</h2>
-
-<p>Comuniquese con nosotros: <a href="mailto:cmoracont@hotamil.com">cmoracont@hotmail.com</a></p>
+<div class="row">  
+<div class="col-lg-8 col-md-10 mx-auto">
+    <p>Estamos siempre listos y dispuestos para usted, cuado usted lo necesita. Para mayor informacion comuniquese via correo el cual atenderemos lo mas pronto posible. Tenemos ventas al mayor o al detal, segun necesidad. </p>
+    <br>
+    <p><b>Teléfono:</b> 316 534-58-81</p>
+    <p><b>Valor: </b> 2500$ unidad </p>
+</div>
+</div>
 
 {% endblock %}
