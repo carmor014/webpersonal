@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} | Chorizos Charala</title>
+</head>
+
+<body>
+    <!-- Cabecera y Menu-->
+    <h1>Chorizos Charala</h1>
+
+    <ul>
+        <li><a href="/">Portada</a></li>
+        <li><a href="/about-me/">Acerca de</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/contacto/">Contactanos</a></li>
+    <ul>
+
+    <!--Contenido-->
+
+    {% block content %}{% endblock %}
+
+</body>
+
+</html>
